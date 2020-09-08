@@ -6,6 +6,7 @@
       login -pfq {username} /usr/local/bin/zsh -il
       ```
 2. iTerm2 & zsh login slow
-    ```none
-    sudo rm -rf /private/var/log/asl/*.asl
-    ```
+    - Run command:
+      ```none
+      sudo rm -rf /private/var/log/asl/*.asl
+      ```
