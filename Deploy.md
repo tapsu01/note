@@ -18,10 +18,16 @@
       ```none
       kubectl create deployment $DEPLOY_NAME --image=$IMAGE_URL
       ```
-    - Get list deployments:
+      - Get list deployments:
       ```none
       kubectl get deployments
       ```
   3. Create service \
-    - expose port
-  
+    - expose port:
+    ```none
+    kubectl expose deployment $DEPLOY_NAME --type=$TYPE --port=$PORT
+    ```
+    - Get link access on browser
+    ```none
+    minikube service $DEPLOY_NAME
+    ```
