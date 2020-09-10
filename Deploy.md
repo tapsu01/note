@@ -7,6 +7,6 @@
 ## K8S
   1. Create **pod**
   2. Deployment
-  3. Create service
+  3. Create service \
     - expose port
   
