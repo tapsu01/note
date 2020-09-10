@@ -4,7 +4,15 @@
     curl -Lo minikube https://storage.googleapis.com/minikube/releases/v1.13.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
     ```
 
-## K8S
+## K8S with minikube
+  1. Create cluster
+    - Run command: 
+      ```none
+      minikube version
+      ```
+      ```none
+      minikube start
+      ```
   1. Create **pod**
   2. Deployment
   3. Create service \
