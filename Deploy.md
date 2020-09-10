@@ -23,11 +23,11 @@
       kubectl get deployments
       ```
   3. Create service \
-    - expose port:
-    ```none
-    kubectl expose deployment $DEPLOY_NAME --type=$TYPE --port=$PORT
-    ```
-    - Get link access on browser
-    ```none
-    minikube service $DEPLOY_NAME
-    ```
+	  - expose port: \
+	  ```none
+	  kubectl expose deployment $DEPLOY_NAME --type=$TYPE --port=$PORT
+	  ```
+	  - Get link access on browser
+	  ```none
+	  minikube service $DEPLOY_NAME
+	  ```
