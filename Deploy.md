@@ -13,10 +13,11 @@
       ```none
       minikube start
       ```
-  2. Deployment
+  2. Deployment \
     ```none
     kubectl create deployment $DEPLOY_NAME --image=$IMAGE_URL
     ```
+    \
   3. Create service \
     - expose port
   
