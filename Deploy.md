@@ -33,10 +33,15 @@
 	  ```
 ___
 
-#### Bugs
+## Bugs
 
 1. Internal error occurred: failed calling webhook "validate.nginx.ingress.kubernetes.io": \
    run command:
    ```none
    kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
    ```
+2. Run local: change domain to: \
+   - .local
+   - .localhost
+   - .test
+   - (any custom/non-standard top-level domain)
