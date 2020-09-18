@@ -40,7 +40,7 @@ ___
    ```none
    kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
    ```
-2. Run local: change domain to: \
+2. Run local: change domain to: 
    - .local
    - .localhost
    - .test
