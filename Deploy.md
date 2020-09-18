@@ -31,3 +31,12 @@
 	  ```none
 	  minikube service $DEPLOY_NAME
 	  ```
+___
+
+#### Bugs
+
+1. Internal error occurred: failed calling webhook "validate.nginx.ingress.kubernetes.io":
+   run command:
+   ```none
+   kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
+   ```
