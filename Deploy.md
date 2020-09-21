@@ -19,7 +19,7 @@
      minikube start
      ```
 
-2. Deployment \
+2. Deployment
 
    - Run command:
 
@@ -33,9 +33,9 @@
      kubectl get deployments
      ```
 
-3. Create service \
+3. Create service
 
-   - expose port: \
+   - expose port:
 
    ```none
    kubectl expose deployment $DEPLOY_NAME --type=$TYPE --port=$PORT
@@ -68,6 +68,8 @@
    - yum remove {service}
    - systemctl daemon-reload
    - systemctl reset-failed
+
+---
 
 ## Monitor
 
