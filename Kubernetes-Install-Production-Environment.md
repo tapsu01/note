@@ -1,4 +1,4 @@
-# Production environment
+# Install K8S Production environment
 
 **Be careful, follow step-by-step installation bellow:**
 
@@ -65,6 +65,20 @@ If you want the docker service to start on boot, run the following command:
 sudo systemctl enable docker
 ```
 
+## Turnoff Firewall
+
+```none
+systemctl disable firewalld >/dev/null 2>&1
+systemctl stop firewalld
+```
+
+## Turnoff swap
+
+```none
+swapoff -a
+sed -i '/swap/d' /etc/fstab
+```
+
 ## Installing kubeadm
 
 ```none
@@ -107,6 +121,34 @@ systemctl restart kubelet
 kubeadm init --apiserver-advertise-address={IP_SERVER} --pod-network-cidr=192.168.0.0/16
 ```
 
+- add calico network addon:
+
 ```none
 kubectl apply -f https://docs.projectcalico.org/v3.16/manifests/calico.yaml
+```
+
+For access cluster from local computer: [follow link](https://xuanthulab.net/gioi-thieu-va-cai-dat-kubernetes-cluster.html)
+
+## Install Dashboard
+
+[Follow link](https://xuanthulab.net/cai-dat-va-su-dung-kubernetes-dashboard.html)
+
+- Generator token access kubernetes dashboard:
+
+```none
+kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}')
+```
+
+## Re-name context
+
+- Run command with old name and new name
+
+```none
+kubectl config rename-context <old-name> <new-name>
+```
+
+- Confirm the change by
+
+```none
+kubectl config get-contexts
 ```
