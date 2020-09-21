@@ -139,6 +139,12 @@ For access cluster from local computer: [follow link](https://xuanthulab.net/gio
 kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user | awk '{print $1}')
 ```
 
+- Allow add pod on master node
+
+```none
+kubectl taint nodes --all node-role.kubernetes.io/master-
+```
+
 ## Re-name context
 
 - Run command with old name and new name
