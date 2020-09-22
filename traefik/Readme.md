@@ -53,7 +53,7 @@ Apply:
 kubectl apply -f https-redirect-middleware.yaml
 ```
 
-- basic auth
+- basic auth, only for deployment `docs`
 
 File: `basic-auth-middleware.yaml`
 
