@@ -13,7 +13,7 @@
 
 ## Namespace
 
-- Note: <namespace> = name given by you. ex: default, jetcare, ...
+- Note: {namespace} = name given by you. ex: default, jetcare, ...
 
 ## secrets
 

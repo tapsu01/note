@@ -3,20 +3,20 @@
 ```none
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo update
-helm install redis bitnami/redis --namespace=<namespace>
+helm install redis bitnami/redis --namespace={namespace}
 ```
 
 NOTES: Please be patient while the chart is being deployed
 
 Redis can be accessed via port 6379 on the following DNS names from within your cluster:
 
-redis-master.<namespace>.svc.cluster.local for read/write operations
-redis-slave.<namespace>.svc.cluster.local for read-only operations
+redis-master.{namespace}.svc.cluster.local for read/write operations
+redis-slave.{namespace}.svc.cluster.local for read-only operations
 
 To get your password run:
 
 ```none
-export REDIS_PASSWORD=$(kubectl get secret --namespace <namespace> redis -o jsonpath="{.data.redis-password}" | base64 --decode)
+export REDIS_PASSWORD=$(kubectl get secret --namespace {namespace} redis -o jsonpath="{.data.redis-password}" | base64 --decode)
 ```
 
 next, run command for password base64
@@ -30,7 +30,7 @@ echo -n <password> | base64
 Run command only:
 
 ```none
-kubectl get secret --namespace <namespace> redis -o jsonpath="{.data.redis-password}
+kubectl get secret --namespace {namespace} redis -o jsonpath="{.data.redis-password}
 ```
 
 finally, set redis password to helm-charts/values.yaml
@@ -40,7 +40,7 @@ finally, set redis password to helm-charts/values.yaml
 1. Run a Redis pod that you can use as a client:
 
 ```none
-kubectl run --namespace <namespace> redis-client --rm --tty -i --restart='Never' \
+kubectl run --namespace {namespace} redis-client --rm --tty -i --restart='Never' \
   --env REDIS_PASSWORD=$REDIS_PASSWORD \
   --image docker.io/bitnami/redis:6.0.3-debian-10-r2 -- bash
 ```
