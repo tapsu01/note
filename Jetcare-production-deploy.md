@@ -37,7 +37,7 @@ kubectl create secret docker-registry <your_secret_name> \
   --docker-email=<email>
 ```
 
-## Deploy
+## Deploy with helm v3+
 
 > at root path project, run command
 
