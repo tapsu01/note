@@ -72,3 +72,33 @@ Apply:
 ```none
 kubectl apply -f basic-auth-middleware.yaml
 ```
+
+Open `Traefik services` in kubernetes dashboard, add spec.externalIPs:
+
+```none
+externalIPs:
+    - {SERVER_IP}
+```
+
+Ingress example file:
+
+```yaml
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: 'foo'
+  namespace: production
+spec:
+  rules:
+    - host: example.net
+      http:
+        paths:
+          - path: /bar
+            backend:
+              serviceName: service1
+              servicePort: 80
+          - path: /foo
+            backend:
+              serviceName: service1
+              servicePort: 80
+```

@@ -36,3 +36,11 @@ kubectl create secret docker-registry <your_secret_name> \
   --docker-password=<github_secret> \
   --docker-email=<email>
 ```
+
+## Deploy
+
+> at root path project, run command
+
+```none
+helm upgrade --install default --namespace default ./packages/helm-charts --values=./packages/helm-charts/values_jck8s.yaml --set admin.image.version=prod-9d478ce --set backend.image.version=prod-9d478ce
+```

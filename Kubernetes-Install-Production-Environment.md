@@ -158,3 +158,7 @@ kubectl config rename-context <old-name> <new-name>
 ```none
 kubectl config get-contexts
 ```
+
+## Refenrences
+
+1. [Introduction & install](https://xuanthulab.net/gioi-thieu-va-cai-dat-kubernetes-cluster.html)

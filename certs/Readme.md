@@ -8,6 +8,18 @@
 kubectl create ns cert-manager
 ```
 
+**Option 1: Installing with regular manifests (recommend)**
+
+```none
+# Kubernetes 1.16+
+$ kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.0.1/cert-manager.yaml
+
+# Kubernetes <1.16
+$ kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.0.1/cert-manager-legacy.yaml
+```
+
+**Option 2: Installing with Helm**
+
 - Add the Jetstack Helm repository:
 
 ```none
@@ -30,7 +42,7 @@ helm install \
   --version v1.0.1
 ```
 
-- Output should be like below:
+**Output should be like below**
 
 ```none
 NAME: cert-manager
