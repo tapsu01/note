@@ -57,3 +57,19 @@ ___
 ## Themes
 
 1. Dracula
+
+# Install VSCode on ubuntu 20.04
+
+## Extentions
+
+1. Gitlens
+- hide gitlens button on tab bar
+```json
+// setting.json
+"gitlens.menus": {
+    "editorGroup": {
+      "blame": false,
+      "compare": false
+    }
+  },
+```
