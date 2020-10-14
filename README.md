@@ -73,3 +73,9 @@ ___
     }
   },
 ```
+2. Prettier
+- prettier does not format code
+```none
+# settings.json
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+```
