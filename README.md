@@ -79,3 +79,11 @@ ___
 # settings.json
 "editor.defaultFormatter": "esbenp.prettier-vscode"
 ```
+
+# (Neo)Vim
+
+- command line will let you pick which package is symlinked to `/usr/bin/vim`
+
+```sh
+update-alternatives --config vim
+```
