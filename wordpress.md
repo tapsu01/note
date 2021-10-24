@@ -19,3 +19,13 @@ function remove_tagcloud_inline_style($input){
   return preg_replace('/ style=("|\')(.*?)("|\')/','',$input);  
 }
 ```
+
+3. Limit tag
+
+```php
+function prefix_widget_tag_cloud_args( $args ) {
+    $args['number'] = 5;
+    return $args;
+}
+add_filter( 'widget_tag_cloud_args',    'prefix_widget_tag_cloud_args',      10, 1 );
+```
