@@ -13,3 +13,5 @@
 6. [AlloyEditor](https://alloyeditor.com/)
 
 7. [RichTextEditor](https://richtexteditor.com/)
+
+8. [Yopta-Editor](https://github.com/Darginec05/Yopta-Editor)
