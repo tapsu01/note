@@ -43,3 +43,11 @@ yay -S polybar dmenu
 ```sh
 yay -S visual-studio-code-bin
 ```
+
+#### Create `.config` folder
+
+```sh
+mkdir ~/.config
+mkdir ~/.config/bspwm
+mkdir ~/.config/sxhkd
+```
