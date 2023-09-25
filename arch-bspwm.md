@@ -52,6 +52,13 @@ mkdir ~/.config/bspwm
 mkdir ~/.config/sxhkd
 ```
 
+- Copy `bspwm` and `sxhkd` config file
+
+```sh
+cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm
+cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd
+```
+
 #### Install ibus-bamboo
 
 ```sh
