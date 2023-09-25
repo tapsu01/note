@@ -51,3 +51,20 @@ mkdir ~/.config
 mkdir ~/.config/bspwm
 mkdir ~/.config/sxhkd
 ```
+
+#### Install ibus-bamboo
+
+```sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/BambooEngine/ibus-bamboo/master/archlinux/install.sh)"
+```
+
+Add to `/etc/profile`
+
+```sh
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT4_IM_MODULE=ibus
+export CLUTTER_IM_MODULE=ibus
+ibus-daemon -drx
+```
