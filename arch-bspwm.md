@@ -25,11 +25,6 @@ yay -S adobe-source-code-pro-fonts \
 ```sh
 yay -S thunar thunar-volman tumbler thunar-archive-plugin polkit-gnome xarchiver unzip
 ```
-- Set thunar dark mode
-
-```sh
-echo 'export GTK_THEME=Adwaita:dark' >> /etc/profile
-```
 
 #### Install audio
 
@@ -79,4 +74,10 @@ export XMODIFIERS=@im=ibus
 export QT4_IM_MODULE=ibus
 export CLUTTER_IM_MODULE=ibus
 ibus-daemon -drx
+```
+
+#### Set dark mode
+
+```sh
+echo 'export GTK_THEME=Adwaita:dark' >> /etc/profile
 ```
