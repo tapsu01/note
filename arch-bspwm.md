@@ -25,6 +25,11 @@ yay -S adobe-source-code-pro-fonts \
 ```sh
 yay -S thunar thunar-volman tumbler thunar-archive-plugin polkit-gnome xarchiver unzip
 ```
+- Set thunar dark mode
+
+```sh
+echo 'export GTK_THEME=Adwaita:dark' >> /etc/profile
+```
 
 #### Install audio
 
