@@ -81,3 +81,9 @@ ibus-daemon -drx
 ```sh
 echo 'export GTK_THEME=Adwaita:dark' >> /etc/profile
 ```
+
+#### Set gnome-screenshot save path
+
+```sh
+gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Pictures/Screenshots/"
+```
