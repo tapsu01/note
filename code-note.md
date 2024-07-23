@@ -20,3 +20,13 @@ function cartesian(...args) {
 }
 cartesian([0,1], [0,1,2,3], [0,1,2]);
 ```
+
+2. MYSQL FIX: The server requested authentication method unknown to the client
+
+```sh
+CREATE USER '[user]'@'[ip_address]' IDENTIFIED WITH mysql_native_password BY 'your_password';
+
+GRANT ALL PRIVILEGES ON *.* TO '[user]'@'[ip_address]' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+```
