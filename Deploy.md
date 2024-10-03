@@ -78,3 +78,22 @@
    ```none
    cat /etc/crio/crio.conf | grep cgroup
    ```
+
+## Mongo command
+
+1. Mongo dump
+```sh
+mongodump -u [DB_USERNAME] --db [DB_DATABASE] --authenticationDatabase=admin --gzip --archive > /path/to/file/dump_`date "+%Y-%m-%d"`.gz
+```
+
+2. Copy file remote machine to local computer
+
+```sh
+scp -P [port] [user]@[server_id]:/path/to/file /path/to/local
+```
+
+3. Mongo restore
+
+```sh
+mongorestore -u [DB_USERNAME] --authenticationDatabase=admin --gzip --archive=/path/to/file/dump_2024-10-03.gz --db [DB_DATABASE]
+```
