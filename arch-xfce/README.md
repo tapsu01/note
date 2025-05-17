@@ -8,3 +8,9 @@ Follow video: https://www.youtube.com/watch?v=gxd2BvUFRJA&t=1295s
 https://github.com/vinceliuice/Qogir-theme
 https://github.com/vinceliuice/Qogir-icon-theme
 ```
+
+2. Install emoij font
+   ```sh
+   sudo pacman -S noto-fonts-emoji
+   sudo fc-cache -fv
+   ```
