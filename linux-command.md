@@ -6,3 +6,9 @@ ls -li
 # 2: remove the dir via inode
 find . -maxdepth 1 -inum 21676512 -exec rm -rf "{}" \;
 ```
+
+2. Xem thư mục nặng nhất trong /
+
+```sh
+sudo du -h --max-depth=1 / | sort -hr
+```
