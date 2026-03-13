@@ -1,3 +1,9 @@
+## Check DNS
+
+```sh
+https://dns.google/resolve?name=vxlnorxizkbk2sklxy5ob2fgvqxv45uh._domainkey.tnktravel.com&type=CNAME
+```
+
 ## Install Sublime Text 3 - Version 3.2.2, Build 3211 On Ubuntu 20.04
 
 
